@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Contact from "./components/Contact/Contact";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About></About>}/>
         <Route path="/contact" element={<Contact/>}/>
-        {/* Add more routes here as needed */}
       </Routes>
       <Footer />
     </Router>
@@ -22,3 +23,4 @@ function App() {
 }
 
 export default App;
+
