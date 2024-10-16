@@ -27,8 +27,10 @@
 
 .text-orange-700{
   color: #f37c46;
+  border-bottom:2px solid #f37c46;
 }
 
 .navLink {
   text-decoration: none;
+
 }

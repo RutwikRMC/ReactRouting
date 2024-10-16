@@ -5,22 +5,22 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
+import GitHub from "./components/GitHub/GitHub";
 
 function App() {
   return (
     <Router>
       <Header />
       {/* Define the routes */}
-
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About></About>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/github" element={<GitHub />} /> {/* Fixed closing tag */}
       </Routes>
-      <Footer />
+      <Footer /> {/* Moved Footer inside Router */}
     </Router>
   );
 }
 
 export default App;
-
