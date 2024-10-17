@@ -12,7 +12,7 @@ function Header() {
             {/* Centered navigation */}
             <div className="d-flex align-items-center">
                 <NavLink
-                    to="/" // Ensure 'to' prop is added for navigation
+                    to="/home" // Ensure 'to' prop is added for navigation
                     className={({ isActive }) => (isActive ? "text-orange-700 ps-3  navLink" : "ps-3 spnNavigators navLink")}
                 >
                     Home
