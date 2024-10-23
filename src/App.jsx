@@ -16,7 +16,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/github" element={<GitHub />} /> {/* Fixed closing tag */}
+        <Route path="/github" element={<GitHub />} /> 
       </Routes>
       <Footer /> {/* Moved Footer inside Router */}
     </Router>

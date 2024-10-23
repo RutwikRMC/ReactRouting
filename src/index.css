@@ -32,5 +32,14 @@
 
 .navLink {
   text-decoration: none;
+}
 
+.hover-effect:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.img-fixed-height {
+  height: 250px; /* Set this to whatever height you prefer */
+  object-fit: cover;
 }
