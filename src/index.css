@@ -43,3 +43,98 @@
   height: 250px; /* Set this to whatever height you prefer */
   object-fit: cover;
 }
+
+
+.hover-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+}
+
+.hover-slide {
+  transform: translateY(20px); /* Initial position, shifted slightly down */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-slide:hover {
+  transform: translateY(0); /* Slide up to original position on hover */
+}
+
+.img-fluid:hover, .img-fixed-height:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contact Container */
+.contact-container {
+  animation: slide-in 0.8s ease-out;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Form input styling */
+.form-input {
+  border: 2px solid #dee2e6;
+  padding: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #f37c46;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Button styling with hover and transition effects */
+.submit-btn {
+  background-color: #f37c46;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #f37c46;
+  transform: translateY(-3px);
+}
+
+/* Responsive alignment and padding adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1.5rem;
+  }
+}

@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
-function GitHub(){
+function GitHub(){ 
+    const data = useLoaderData()
+
     return(
         <div>
-            <h1>GitHub Docs</h1>
+            <h3>GitHub User Name: {data.name}</h3>
+            <h3>GitHub Login: {data.login}</h3>
+            <h3>GitHub Followers: {data.followers}</h3>
         </div>
     );
 }
 
 export default GitHub;
+export const fetchGitApiDataLoader = async () => { 
+    const response = await fetch('https://api.github.com/users/RutwikRMC');
+    return response.json();
+};

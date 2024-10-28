@@ -13,27 +13,33 @@ function Header() {
             <div className="d-flex align-items-center">
                 <NavLink
                     to="/home" // Ensure 'to' prop is added for navigation
-                    className={({ isActive }) => (isActive ? "text-orange-700 ps-3  navLink" : "ps-3 spnNavigators navLink")}
+                    className={({ isActive }) => (isActive ? "text-orange-700 ms-3 navLink" : "ms-3 spnNavigators navLink")}
                 >
                     Home
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className={({ isActive }) => (isActive ? "text-orange-700 ps-3  navLink" : "ps-3 spnNavigators navLink") }
+                    className={({ isActive }) => (isActive ? "text-orange-700 ms-3  navLink" : "ms-3 spnNavigators navLink") }
                 >
                     About
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    className={({ isActive }) => (isActive ? "text-orange-700 ps-3  navLink" : "ps-3 spnNavigators navLink")}
+                    className={({ isActive }) => (isActive ? "text-orange-700 ms-3  navLink" : "ms-3 spnNavigators navLink")}
                 >
                     Contact
                 </NavLink>
                 <NavLink
                     to="/github"
-                    className={({ isActive }) => (isActive ? "text-orange-700 ps-3 spnNavigators navLink" : "ps-3 spnNavigators navLink")}
+                    className={({ isActive }) => (isActive ? "text-orange-700 ms-3 spnNavigators navLink" : "ms-3 spnNavigators navLink")}
                 >
                     GitHub
+                </NavLink>
+                <NavLink
+                    to="/user/1"
+                    className={({ isActive }) => (isActive ? "text-orange-700 ms-3 spnNavigators navLink" : "ms-3 spnNavigators navLink")}
+                >
+                    User
                 </NavLink>
             </div>
 

@@ -1,20 +1,21 @@
 import React from "react";
+import "animate.css";
 
 function About() {
   return (
-    <div className="container my-5">
-      <h1 className="display-4 fw-bold text-center mb-4">About Us</h1>
+    <div className="container my-5 animate__animated animate__fadeIn">
+      <h1 className="display-4 fw-bold text-center mb-4 animate__animated animate__zoomIn">About Us</h1>
       
       {/* Introduction Section */}
       <section className="mb-5">
-        <p className="lead text-center">
+        <p className="lead text-center animate__animated animate__fadeInUp">
           Welcome to our store! We are passionate about delivering the best fashion to you.
         </p>
       </section>
 
       {/* Our Story Section */}
       <section className="row mb-5">
-        <div className="col-md-6">
+        <div className="col-md-6 animate__animated animate__fadeInLeft">
           <h2 className="h3">Our Story</h2>
           <p>
             Founded in 2020, our brand is committed to bringing the latest trends in fashion to 
@@ -22,25 +23,25 @@ function About() {
             catering to fashion lovers worldwide.
           </p>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 animate__animated animate__fadeInRight">
           <img 
             src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZhY3Rpb258ZW58MHx8fHwxNjcxMzg0Mjg3&ixlib=rb-4.0.3&q=80&w=600" 
             alt="Our Story"
-            className="img-fluid rounded shadow-lg"
+            className="img-fluid rounded shadow-lg hover-slide"
           />
         </div>
       </section>
 
       {/* Mission Section */}
       <section className="row mb-5">
-        <div className="col-md-6">
+        <div className="col-md-6 animate__animated animate__fadeInLeft">
           <img 
             src="https://www.shutterstock.com/shutterstock/photos/2276750979/display_1500/stock-photo-mission-team-building-or-hands-of-business-people-with-goals-support-or-motivation-for-success-or-2276750979.jpg"
             alt="Our Mission"
-            className="img-fluid rounded shadow-lg"
+            className="img-fluid rounded shadow-lg hover-slide"
           />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 animate__animated animate__fadeInRight">
           <h2 className="h3">Our Mission</h2>
           <p>
             Our mission is simple: to provide high-quality, stylish clothing that doesn't break 
@@ -51,7 +52,7 @@ function About() {
       </section>
 
       {/* Vision Section */}
-      <section className="text-center bg-light py-5 rounded shadow-lg">
+      <section className="text-center bg-light py-5 rounded shadow-lg animate__animated animate__fadeInUp">
         <h2 className="h3 mb-4">Our Vision</h2>
         <p className="lead">
           We aim to be a global leader in the fashion industry, setting trends and inspiring 

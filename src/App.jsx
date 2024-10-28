@@ -5,8 +5,8 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
-import GitHub from "./components/GitHub/GitHub";
-
+import GitHub, {fetchGitApiDataLoader} from './components/GitHub/GitHub';
+import User from "./User/User";
 function App() {
   return (
     <Router>
@@ -16,9 +16,10 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/github" element={<GitHub />} /> 
+        <Route loader={fetchGitApiDataLoader} path="/github" element={<GitHub />} /> 
+        <Route path="/user/:userId" element={<User />} /> 
       </Routes>
-      <Footer /> {/* Moved Footer inside Router */}
+      <Footer /> 
     </Router>
   );
 }
